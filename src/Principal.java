@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
+
         Scanner teclado = new Scanner(System.in);
         ConsultarApi consultarApi = new ConsultarApi();
         TranformarMoneda tranformarMoneda = new TranformarMoneda();
@@ -11,7 +12,7 @@ public class Principal {
 
         while (option != 6) {
             System.out.println("""
-                    *****************************************************************
+                    ****************************************************************
                     1- Peso Dominicano a Dolar Estadounidese.
                     2- Dolar Estadounidese a Peso Dominicano.
                     3- Dolar Canadiense a Peso Dominicano.
@@ -25,23 +26,23 @@ public class Principal {
                switch (option) {
                    case 1:
                        tranformarMoneda.equivanlente("DOP","USD",consultarApi,teclado);
-                       System.out.println("vamos bien");
+                       
                        break;
                    case 2:
                         tranformarMoneda.equivanlente("USD","DOP",consultarApi,teclado);
-                       System.out.println("sigue asi mio");
+                       
                        break;
                    case 3:
                        tranformarMoneda.equivanlente("CAD","DOP",consultarApi,teclado);
-                       System.out.println("casi casi papa");
+                       
                        break;
                    case 4:
                        tranformarMoneda.equivanlente("MXN","COP",consultarApi,teclado);
-                       System.out.println("keep up");
+                       
                        break;
                    case 5:
                        tranformarMoneda.equivanlente("DOP","ARS",consultarApi,teclado);
-                       System.out.println("ves que si puedes ");
+                       
 
                        break;
                    case 6:

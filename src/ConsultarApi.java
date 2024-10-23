@@ -11,6 +11,7 @@ public class ConsultarApi {
 
          HttpClient client = HttpClient.newHttpClient();
          HttpRequest request = HttpRequest.newBuilder()
+         
                  .uri(dirrecion)
                  .build();
 

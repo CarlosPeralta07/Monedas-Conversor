@@ -15,8 +15,10 @@ public class TranformarMoneda {
                 System.out.println(cantidad+" "+base+ " = " + resultado+ " "+ monedas.target_code());
 
             }catch (NumberFormatException e){
+
                 System.out.println("Revisa miop"+e.getCause());
             }catch (RuntimeException e) {
+                
                 throw new RuntimeException(e);
             }
 
